@@ -1,0 +1,16 @@
+<label>Enter your Age</label>
+
+<!-- two way binding, Event binding -->
+<input type="text" [(ngModel)]='age' (blur)='changeStatus()'>
+
+<!-- property Binding Non string value-->
+<input type="button" [disabled]='isDisabled' value='get Quote' (click)='showPolicy()'>
+
+<!-- interpolation with string value-->
+<p>
+  {{age}}
+</p>
+
+<p>
+    {{suggestedPolicy}}
+  </p>

@@ -1,0 +1,25 @@
+<div style="height:620px;margin-top: 90px;">
+    <h4>Our Popular Policies</h4>
+<div class="card-deck">
+  <div *ngFor='let policy of policyList'>
+
+      <div class="card-header"> {{policy.policyName}}</div>
+      <div class="card-body" style="text-align: center;">{{policy.description}}</div>
+      <!-- <div class='card-footer'>
+          <button class="btn btn-danger" (click)="showInfo(idx)">Show Details</button>
+      </div>-->
+  </div> <br/>
+  
+</div>
+<div>
+    <h3>What our Customers say !</h3>
+    <p>
+        {{corpFeedback}}
+    </p>
+    <p>
+        {{retailFeedback}}
+    </p>
+    <app-testimony></app-testimony>
+</div>
+</div>
+

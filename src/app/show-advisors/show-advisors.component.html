@@ -1,0 +1,17 @@
+<h3>Our Insurance Advisors</h3>
+<table class="table table-stripped">
+
+<tr>
+   <th>ID</th>
+   <th>Name</th>
+   <th>Mobile Number</th>
+</tr>
+
+<tr *ngFor='let advisor of advisorList'>
+    <td>{{advisor.id}}</td>
+    <td>{{advisor.name}}</td>
+    <td>{{advisor.mobileNumber}}</td>
+
+</tr>
+
+</table>

@@ -1,0 +1,11 @@
+<nav class="nav nav-tabs">
+<ul>
+  <li *ngFor='let link1 of linksFromParent'>
+      <a [href] ='link1.linkRef' 
+        [class]='link1.linkStyle'>{{link1.linkText}}</a>
+    
+  </li>
+  <li *ngIf='showLogin' class='nav-item'><a href='' class='nav-link' appHighLight>Login</a></li>
+  <li *ngIf='showLogout' class='nav-item'><a href='' class='nav-link' appHighLight>Logout</a></li>
+</ul>
+</nav>
