@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -19,6 +19,7 @@ import { HighLightDirective } from './high-light.directive';
 import { AddElementDirective } from './add-element.directive';
 import { ShowLocationComponent } from './show-location/show-location.component';
 import { ShowPolicyDetailsComponent } from './show-policy-details/show-policy-details.component';
+import {NgxPaginationModule} from 'ngx-pagination';
 import { FilterPipe } from './filter.pipe'
 
 @NgModule({
@@ -43,7 +44,7 @@ import { FilterPipe } from './filter.pipe'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, HttpClientModule,FormsModule
+    AppRoutingModule, HttpClientModule,FormsModule,NgxPaginationModule,ReactiveFormsModule
   ],
   providers: [HttpClient],
   entryComponents: [ShowLocationComponent],

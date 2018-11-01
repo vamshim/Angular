@@ -1,1 +1,18 @@
-<button (click)='validate()'>Signin</button> 
+<form [formGroup]='loginForm' (ngSubmit)='validate()'>
+    <ng-container *ngFor='let config of formConfig'>
+
+        <div class='form-group'> 
+            <label>{{config.label}}</label>
+            <input type={{config.type}} name={{config.name}} formControlName={{config.name}}> 
+
+        </div>
+        
+    </ng-container>
+    <div *ngIf='loginForm.invalid && (loginForm.dirty || loginForm.touched)'>UserName or Pass Word is Required</div>
+    <input type="submit" value="SignIn" class='btn btn-info' [disabled]='loginForm.invalid'>
+    <!--<button (click)='validate()'>Signin</button> -->
+</form>
+
+
+
+
