@@ -3,7 +3,7 @@
 
         <div class='form-group'> 
             <label>{{config.label}}</label>
-            <input type={{config.type}} name={{config.name}} formControlName={{config.name}}> 
+            <input type={{config.type}} name={{config.name}} formControlName={{config.name}} class='form-control'> 
 
         </div>
         
@@ -13,6 +13,8 @@
     <!--<button (click)='validate()'>Signin</button> -->
 </form>
 
+
+<span style='color: red'>{{errorMessage}}</span>
 
 
 

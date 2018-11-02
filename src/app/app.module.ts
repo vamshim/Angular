@@ -20,7 +20,11 @@ import { AddElementDirective } from './add-element.directive';
 import { ShowLocationComponent } from './show-location/show-location.component';
 import { ShowPolicyDetailsComponent } from './show-policy-details/show-policy-details.component';
 import {NgxPaginationModule} from 'ngx-pagination';
-import { FilterPipe } from './filter.pipe'
+import { FilterPipe } from './filter.pipe';
+import { DetailsComponent } from './details/details.component';
+import { ShowHealthPolicyComponent } from './show-health-policy/show-health-policy.component';
+import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { ChildComponent } from './child/child.component'
 
 @NgModule({
   declarations: [
@@ -40,7 +44,11 @@ import { FilterPipe } from './filter.pipe'
     AddElementDirective,
     ShowLocationComponent,
     ShowPolicyDetailsComponent,
-    FilterPipe
+    FilterPipe,
+    DetailsComponent,
+    ShowHealthPolicyComponent,
+    LifeCycleComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
@@ -49,5 +57,6 @@ import { FilterPipe } from './filter.pipe'
   providers: [HttpClient],
   entryComponents: [ShowLocationComponent],
   bootstrap: [AppComponent,FooterComponent]
+  //bootstrap: [LifeCycleComponent]
 })
 export class AppModule { }

@@ -14,11 +14,17 @@ export class HeaderComponent implements OnInit {
     links:PageLink[];
 
   constructor() { 
+
     this.majHeading ="Verizon Insurance";
     this.logo ='assets/images/verizon.png';
-    this.links = [{linkText:'Home',linkRef:'Home',linkStyle:'nav'},
-    {linkText:'Aboutus',linkRef:'Aboutus',linkStyle:'nav'},
-    {linkText:'Contact',linkRef:'Contact',linkStyle:'nav'}];
+
+    this.links = [
+    {linkText:'Products',linkRef:'Products',linkStyle:'nav-link'},
+    {linkText:'History',linkRef:'history',linkStyle:'nav-link'},
+    {linkText:'Advisors',linkRef:'Advisors',linkStyle:'nav-link'},
+    {linkText:'Get Quote',linkRef:'quote',linkStyle:'nav-link'},
+    {linkText:'Branches',linkRef:'branches',linkStyle:'nav-link'}
+    ];
   }
 
   ngOnInit() {

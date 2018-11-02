@@ -14,9 +14,10 @@ export class ContentComponent implements OnInit, AfterViewInit {
   policyList:PolicyDetails[];
 
   @ViewChild(TestimonyComponent)compRef:TestimonyComponent;
+  show = false;
   corpFeedback:string;
   retailFeedback:String;
-
+  
   constructor(private ref: ChangeDetectorRef) { 
     this.policyList = [{policyName:'Jeevan Anand',description:'description of Jeevan Anand Garu '},
                 {policyName:'Jeevan Akashay', description:'Description of Jeevan Akashay'}];
@@ -26,6 +27,7 @@ export class ContentComponent implements OnInit, AfterViewInit {
     //throw new Error("Method not implemented.");
     this.corpFeedback = this.compRef.getCorpCustomerFeedBack();
     this.retailFeedback=this.compRef.getRetailCustomerFeedBack();
+    this.show = true;
     this.ref.detectChanges();
   }
   ngOnInit() {

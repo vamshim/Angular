@@ -1,10 +1,11 @@
 <div style="height:620px;margin-top: 90px;">
     <h4>Our Popular Policies</h4>
-<div class="card-deck">
-  <div *ngFor='let policy of policyList'>
+<div class='card-deck'>
+    
+  <div *ngFor='let policy of policyList' class='card'>
 
-      <div class="card-header"> {{policy.policyName}}</div>
-      <div class="card-body" style="text-align: center;">{{policy.description}}</div>
+      <div class='card-header' style='text-align: center'> {{policy.policyName}}</div>
+      <div class='card-body'>{{policy.description}}</div>
       <!-- <div class='card-footer'>
           <button class="btn btn-danger" (click)="showInfo(idx)">Show Details</button>
       </div>-->
@@ -13,9 +14,9 @@
 </div>
 <div>
     <h3>What our Customers say !</h3>
-    <p>
-        {{corpFeedback}}
-    </p>
+
+    <p>{{corpFeedback}}</p>
+   
     <p>
         {{retailFeedback}}
     </p>

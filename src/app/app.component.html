@@ -1,21 +1,8 @@
 
 <div>
   <div><app-header></app-header></div>
-  <div><app-content></app-content></div>
-  
+  <div><router-outlet> </router-outlet></div>
+ 
 </div>
-<div>
-  <app-show-advisors></app-show-advisors>
-  <app-show-quote></app-show-quote>
-</div>
-<div>
-  <app-search-branch></app-search-branch>
-</div>
-<app-login></app-login>
-<app-logout></app-logout>
-<article></article>
-<button appAddElement [elementToAdd]="'h1'" [elementText]="'Added by Directive'">Add</button>
-<app-show-policy-details></app-show-policy-details>
-<router-outlet>
 
-</router-outlet>
+

@@ -8,7 +8,7 @@ import { InsurancePolicyDetails } from '../insurance-policy-details';
   styleUrls: ['./show-policy-details.component.css']
 })
 export class ShowPolicyDetailsComponent implements OnInit {
-
+  page1=0;
   srchName = '';
   constructor(private service: InsuranceAPIService) { }
   policyData:InsurancePolicyDetails = {
